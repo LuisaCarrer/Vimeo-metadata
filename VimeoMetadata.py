@@ -92,6 +92,7 @@ def save_data(df, filename, columns_rename_dict = None, path = None ):
 
     # Save panda metadata in .csv using file_path as name
     df.to_csv(filename, index=False)
+    logger.info(f"File save as {filename}.")
 
 
 if __name__ == "__main__":
